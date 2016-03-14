@@ -9,3 +9,7 @@ C:\ProjectsCorpv\ATT West\DownloadGIScloudImages\DownloadImages\obj\x86\Release\
 C:\ProjectsCorpv\ATT West\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.exe
 C:\ProjectsCorpv\ATT West\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.pdb
 C:\ProjectsCorpv\ATT West\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.csprojResolveAssemblyReference.cache
+C:\GitHub\DownloadGIScloudImages\DownloadGIScloudImages\DownloadImages\obj\x86\Release\Interop.WinHttp.dll
+C:\GitHub\DownloadGIScloudImages\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.csproj.ResolveComReference.cache
+C:\GitHub\DownloadGIScloudImages\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.exe
+C:\GitHub\DownloadGIScloudImages\DownloadGIScloudImages\DownloadImages\obj\x86\Release\DownloadGIScloudImages.pdb
