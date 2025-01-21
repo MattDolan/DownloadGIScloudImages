@@ -29,7 +29,7 @@ namespace DownloadImages
             // Set the last used value for the "multi select mode" checkbox
             try
             {
-                string value = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\QCData\DowloadGIScloudImages", "OpenExplorer", "Checked");
+                string value = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\<CompanyID>\DowloadGIScloudImages", "OpenExplorer", "Checked");
 
                 if (value == "Checked")
                 {
@@ -268,7 +268,7 @@ namespace DownloadImages
                                     writer.WriteLine("<IconStyle>");
                                     writer.WriteLine("<Icon>");
                                     //writer.WriteLine("<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>");
-                                    writer.WriteLine("<href>https://www.qcdata.s3.amazonaws.com/img/earthit/house2.png</href>");
+                                    writer.WriteLine("<href>https://www.<CompanyID>.s3.amazonaws.com/img/earthit/house2.png</href>");
                                     writer.WriteLine("</Icon>");
                                     writer.WriteLine("</IconStyle>");
                                     writer.WriteLine("</Style>");
@@ -425,13 +425,13 @@ namespace DownloadImages
         {
             if (chkExplorer.Checked == false)
             {
-                RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\QCData\DowloadGIScloudImages");
+                RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\<CompanyID>\DowloadGIScloudImages");
                 key.SetValue("OpenExplorer", chkExplorer.CheckState);
                 key.Close();
             }
             else
             {
-                RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\QCData\DowloadGIScloudImages");
+                RegistryKey key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\<CompanyID>\DowloadGIScloudImages");
                 key.SetValue("OpenExplorer", chkExplorer.CheckState);
                 key.Close();
             }
